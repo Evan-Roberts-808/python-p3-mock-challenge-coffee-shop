@@ -21,8 +21,8 @@ class TestCoffee:
         '''Cannot change the name of the coffee'''
         coffee = Coffee("Mocha")
 
-        # with pytest.raises(Exception):
-        #     coffee.name = "Peppermint Mocha"
+        with pytest.raises(Exception):
+            coffee.name = "Peppermint Mocha"
 
     def test_has_many_orders(self):
         '''coffee has many orders.'''
